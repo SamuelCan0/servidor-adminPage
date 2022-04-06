@@ -38,7 +38,7 @@ function deleteProject(req,res){
             if (!projectElim) {
                 res.status(404).send({mensaje:"No se logro Eliminar"});
             } else {
-                res.status(500).send({Project:projectElim});
+                res.status(200).send({Project:projectElim});
             }
         }
     });

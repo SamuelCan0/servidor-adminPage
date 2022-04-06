@@ -38,7 +38,7 @@ function deleteGallery(req,res){
             if (!galleryElim) {
                 res.status(404).send({mensaje:"No se logro Eliminar"});
             } else {
-                res.status(500).send({Gallery:galleryElim});
+                res.status(200).send({Gallery:galleryElim});
             }
         }
     });
